@@ -12,6 +12,8 @@
 		98006207253926AF0075F731 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98006205253926AF0075F731 /* LaunchScreen.storyboard */; };
 		98006212253926AF0075F731 /* Ios_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98006211253926AF0075F731 /* Ios_CalculatorTests.swift */; };
 		9800621D253926AF0075F731 /* Ios_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9800621C253926AF0075F731 /* Ios_CalculatorUITests.swift */; };
+		98006262253969450075F731 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98006260253969450075F731 /* HomeViewController.swift */; };
+		98006263253969450075F731 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98006261253969450075F731 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		98006218253926AF0075F731 /* Ios-CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ios-CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9800621C253926AF0075F731 /* Ios_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ios_CalculatorUITests.swift; sourceTree = "<group>"; };
 		9800621E253926AF0075F731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98006260253969450075F731 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		98006261253969450075F731 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +98,12 @@
 			isa = PBXGroup;
 			children = (
 				980061FA253926AC0075F731 /* AppDelegate.swift */,
-				98006203253926AF0075F731 /* Assets.xcassets */,
-				98006205253926AF0075F731 /* LaunchScreen.storyboard */,
+				9800624825395FE80075F731 /* View */,
+				9800624725395FDC0075F731 /* Controller */,
+				9800624625395FD30075F731 /* Model */,
+				9800624925395FF80075F731 /* Util */,
 				9800623F2539289A0075F731 /* Supporting Files */,
+				98006203253926AF0075F731 /* Assets.xcassets */,
 			);
 			path = "Ios-Calculator";
 			sourceTree = "<group>";
@@ -125,6 +132,61 @@
 				98006208253926AF0075F731 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9800624625395FD30075F731 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9800624725395FDC0075F731 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9800624C253968190075F731 /* Home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9800624825395FE80075F731 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9800624A253967AC0075F731 /* Launch */,
+				9800624B253968090075F731 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9800624925395FF80075F731 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		9800624A253967AC0075F731 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				98006205253926AF0075F731 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		9800624B253968090075F731 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				98006261253969450075F731 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9800624C253968190075F731 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				98006260253969450075F731 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +294,7 @@
 			files = (
 				98006207253926AF0075F731 /* LaunchScreen.storyboard in Resources */,
 				98006204253926AF0075F731 /* Assets.xcassets in Resources */,
+				98006263253969450075F731 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				980061FB253926AC0075F731 /* AppDelegate.swift in Sources */,
+				98006262253969450075F731 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
